@@ -1,4 +1,4 @@
-# my-first-web-part
+# Marchroutes of Each Shuttles list
 
 ## Summary
 
@@ -15,17 +15,13 @@ Short summary on functionality and used technologies.
 - [SharePoint Framework](https://aka.ms/spfx)
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
-
-> Any special pre-requisites?
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| WebParFolde | Fuad Garibli                                            |
 
 ## Version history
 
