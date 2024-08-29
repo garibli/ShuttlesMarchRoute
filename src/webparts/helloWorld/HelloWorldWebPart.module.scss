@@ -1,0 +1,158 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.helloWorld {
+  overflow: hidden;
+  padding: 1em;
+  color: '[theme:bodyText, default: #323130]';
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .map {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .item {
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #c7c4c4;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    text-align: left;
+    transition: transform 0.2s;
+    width: calc(20%);
+    box-sizing: border-box;
+  }
+
+  .item:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1200px) {
+    .item {
+      width: calc(25% - 16px);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .item {
+      width: calc(33.33% - 16px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      width: calc(50% - 16px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .item {
+      width: 100%;
+    }
+  }
+
+  .label {
+    color: gray;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .data {
+    margin: 0;
+  }
+
+  .detailView {
+    background-color: #f3f1e7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+  }
+
+  .detailsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .detailLeft,
+  .detailRight {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    width: 48%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 992px) {
+    .detailLeft,
+    .detailRight {
+      width: 100%;
+    }
+  }
+
+  .busStop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 24px;
+  }
+
+  .busStopButton {
+    width: 16px;
+    height: 16px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+  }
+
+  .busStop:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: gray;
+    top: 16px;
+    bottom: -10px;
+    left: 7.3px;
+  }
+
+  .backButton {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 4px 8px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 12px;
+  }
+
+  .backButton:hover {
+    background-color: #005a9e;
+  }
+}
